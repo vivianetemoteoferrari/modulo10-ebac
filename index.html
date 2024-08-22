@@ -8,8 +8,9 @@
     <link rel="preconnect" href="http://fonts.googleapis.com">
     <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./main.css">
 
 </head>
@@ -54,8 +55,12 @@
             <img src="./images/loja.jpg" alt="Imagem Loja EBAC Motors">
             <div>
                 <h2>Sobre a EBAC Motors</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam ut voluptatum maiores a asperiores dolorem cumque deleniti est dicta cum libero harum accusamus modi architecto ab qui, quo inventore?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum cumque perspiciatis corporis et sint quasi. Tempore culpa debitis non, animi quibusdam corrupti rem optio esse commodi natus repellendus totam quas!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam ut voluptatum maiores a
+                    asperiores dolorem cumque deleniti est dicta cum libero harum accusamus modi architecto ab qui, quo
+                    inventore?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum cumque perspiciatis corporis et
+                    sint quasi. Tempore culpa debitis non, animi quibusdam corrupti rem optio esse commodi natus
+                    repellendus totam quas!</p>
             </div>
         </div>
     </section>
@@ -189,16 +194,70 @@
         </div>
     </section>
 
+    <section>
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome">
+                </div>
+
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-campo">
+                    <label for="veiculo-interesse">Veículo de interesse</label>
+                    <input type="text" id="veiculo-interesse">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2024 &copy; EBAC Motors - Todos os direitos reservados
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('#carousel-imagens').slick({
-                autoplay:true
+                autoplay: true
             });
 
-            $('.menu-hamburguer').click(function(){
+            $('.menu-hamburguer').click(function () {
                 $('nav').slideToggle();
             });
         })
