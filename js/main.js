@@ -34,9 +34,9 @@ $(document).ready(function () {
             telefone: 'Por favor, insira seu telefone.',
             mensagem: 'Por favor, insira uma mensagem.'
         },
-        submitHandler: function(form) {
+        submitHandler: function (form) {
             console.log('Formulário enviado');
-            form.submit();  
+            form.submit();
         },
         invalidHandler: function (e, validator) {
             let camposIncorretos = validator.numberOfInvalids();
